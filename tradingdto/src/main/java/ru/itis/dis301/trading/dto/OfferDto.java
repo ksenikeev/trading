@@ -1,5 +1,6 @@
 package ru.itis.dis301.trading.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -17,6 +18,12 @@ public class OfferDto {
     private Float count;
     private Float price;
     private String currency;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     private LocalDateTime dateTime;
     private Map<String, String> properties;
 }
+/**
+ * test data
+ * {"uid":"14e33c47-aafb-472a-9a08-44f5aff5a489",
+ * organization}
+ */

@@ -30,7 +30,8 @@ public class OfferRestController {
     @Transactional
     public OfferDto saveNewOffer(@RequestBody OfferDto offerDto) {
 
-        //offerService.save(offer);
+        System.out.println(offerDto);
+        offerService.save(offerService.offerAdapter(offerDto));
 
         return offerDto;
     }

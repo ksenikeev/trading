@@ -34,3 +34,14 @@ docker build . -t java-hello
 Запись адреса в /etc/hosts
 
 docker run -td -h guju <image name>
+
+### Собственная статическая адресация
+docker network create --subnet=172.18.0.0/16 my_custom_network
+
+docker run --network my_custom_network --ip 172.18.0.2 -d my_image
+
+### Состояние контейнера
+docker inspect 6111677b6642
+
+
+

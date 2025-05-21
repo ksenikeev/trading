@@ -9,5 +9,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface OrganizationRepository extends JpaRepository<Organization, Long> {
+
     Optional<Organization> findOrganizationByUid(UUID uid);
 }

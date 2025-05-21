@@ -1,0 +1,28 @@
+{
+  "uid": "14e33c47-aafb-472a-9a08-44f5aff5a489",
+  "organization":
+  {
+    "uid": "a4e33c22-aafb-472a-9a08-44f5aff5a489",
+    "name": "Организация 1",
+    "nameLat": "Organization 1",
+    "country": "RUS"
+  },
+  "merch":
+  {
+    "uid": "32f11a27-ab8b-472a-9a08-44f5aff5a489",
+    "categoty": 1,
+    "name": "Стол",
+    "unit": 1
+  },
+  "description": "Стул офисный",
+  "count": 100,
+  "price": 3000,
+  "currency": "RUB",
+  "dateTime": "2025-05-20T10:01:18.023",
+  "properties": {
+    "Цвет": "Черный",
+    "Материал": "Металл, ткань",
+    "Лифт": "В наличии",
+    "Регулировка наклона": "Имеется"
+  }
+}

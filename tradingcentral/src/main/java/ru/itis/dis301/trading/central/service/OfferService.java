@@ -60,6 +60,8 @@ public class OfferService {
                 countryRepository.findCountryByCode(offerDto.getOrganization().getCountry())
                         .orElseThrow(() -> new EntityNotFoundException()));
 
+        offer.setOrganization(organization);
+
         Merch merch =
                 merchRepository.findMerchByUid(offerDto.getMerch().getUid())
                         .orElse(new Merch());
@@ -71,6 +73,8 @@ public class OfferService {
         merch.setCategory(merchCategoryRepository
                 .findById(offerDto.getMerch().getCategoty())
                 .orElseThrow(() -> new EntityNotFoundException()));
+
+        offer.setMerch(merch);
 
         offer.setCount(offerDto.getCount());
         offer.setCurrency(currencyRepository

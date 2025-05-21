@@ -16,10 +16,11 @@ public class Offer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private UUID uid;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Organization organization;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Merch merch;
     private String description;
     private Float count;
